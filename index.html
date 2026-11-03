@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>지리산 자연담은</title>
+<meta name="description" content="지리산 천왕봉 자락 해발 730m, 3대째 이어온 산청 시골농장의 벌꿀·곶감 직영 쇼핑몰.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@500;700;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf6ee;--paper:#fffdf8;--ink:#2b2a22;--sub:#6d6a5c;--line:#e7dfcc;--honey:#c98a12;--honey-d:#a06c06;--forest:#2f4a36;--forest-d:#213527;--persim:#c8501f}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#17190f;--paper:#1f2216;--ink:#f1ecdc;--sub:#a9a58f;--line:#33372a;--honey:#e0a73a;--honey-d:#f0bb55;--forest:#7fa886;--forest-d:#0f1a12;--persim:#e8793f}}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'Noto Sans KR',system-ui,sans-serif;background:var(--bg);color:var(--ink);word-break:keep-all;line-height:1.6;-webkit-font-smoothing:antialiased}
+.serif{font-family:'Noto Serif KR',serif}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+.demo{background:var(--forest-d);color:#f4efe0;font-size:13px;text-align:center;padding:7px 12px}
+.demo b{color:#f0bb55}
+header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;gap:20px;height:64px}
+.logo{font-family:'Noto Serif KR',serif;font-weight:900;font-size:22px;letter-spacing:-.02em;display:flex;align-items:center;gap:8px}
+.logo i{width:26px;height:26px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#f2c45a,#c98a12 60%,#7a4f05);display:inline-block}
+nav{display:flex;gap:22px;margin-left:auto;font-size:15px;font-weight:500}
+nav a:hover{color:var(--honey-d)}
+.cartbtn{border:1px solid var(--line);background:var(--paper);border-radius:999px;padding:8px 16px;font-size:14px;font-weight:700;color:var(--ink)}
+.cartbtn span{display:inline-block;min-width:20px;padding:0 6px;margin-left:6px;border-radius:99px;background:var(--honey);color:#fff;font-size:12px;text-align:center}
+@media(max-width:760px){nav{display:none}.cartbtn{margin-left:auto}}
+.hero{position:relative;color:#fff;min-height:560px;display:flex;align-items:center;background:linear-gradient(100deg,rgba(18,30,24,.88) 0%,rgba(18,30,24,.62) 50%,rgba(18,30,24,.3)),url(img/hero.jpg) center/cover}
+.hero .wrap{padding-top:70px;padding-bottom:70px}
+.eyebrow{font-size:13px;letter-spacing:.18em;color:#f0bb55;font-weight:700}
+.hero h1{font-family:'Noto Serif KR',serif;font-weight:900;font-size:clamp(34px,5.6vw,62px);line-height:1.22;margin:14px 0 18px;letter-spacing:-.03em}
+.hero p{max-width:520px;font-size:17px;opacity:.92}
+.cta{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
+.btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:700;font-size:15px;border:0}
+.btn.pri{background:var(--honey);color:#fff}.btn.pri:hover{background:var(--honey-d)}
+.btn.ghost{border:1px solid rgba(255,255,255,.55);color:#fff;background:transparent}
+.trust{background:var(--paper);border-bottom:1px solid var(--line)}
+.trust ul{list-style:none;padding:0;display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.trust li{padding:20px 14px;text-align:center;border-left:1px solid var(--line);font-size:14px;color:var(--sub)}
+.trust li:first-child{border-left:0}
+.trust b{display:block;font-family:'Noto Serif KR',serif;font-size:16px;color:var(--ink);margin-bottom:2px}
+@media(max-width:760px){.trust ul{grid-template-columns:1fr 1fr}.trust li:nth-child(3){border-left:0}.trust li:nth-child(n+3){border-top:1px solid var(--line)}}
+section{padding:72px 0}
+.sh{text-align:center;margin-bottom:34px}
+.sh small{color:var(--honey-d);font-weight:700;letter-spacing:.16em;font-size:12px}
+.sh h2{font-family:'Noto Serif KR',serif;font-size:clamp(26px,3.6vw,36px);font-weight:900;margin-top:6px;letter-spacing:-.02em}
+.sh p{color:var(--sub);margin-top:8px}
+.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.cat{position:relative;aspect-ratio:4/5;border-radius:18px;overflow:hidden;display:flex;align-items:flex-end;color:#fff;border:0;text-align:left}
+.cat img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.cat:hover img{transform:scale(1.05)}
+.cat:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.7),transparent 60%)}
+.cat div{position:relative;z-index:1;padding:18px}
+.cat b{font-family:'Noto Serif KR',serif;font-size:21px;display:block}
+.cat span{font-size:13px;opacity:.85}
+@media(max-width:760px){.cats{grid-template-columns:1fr 1fr}}
+.tabs{display:flex;gap:8px;overflow-x:auto;justify-content:center;margin-bottom:26px;padding-bottom:4px}
+.tab{flex:none;padding:9px 20px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink);font-size:14px;font-weight:500}
+.tab[aria-pressed=true]{background:var(--forest);color:#fff;border-color:var(--forest)}
+@media(max-width:760px){.tabs{justify-content:flex-start}}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media(max-width:980px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:700px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+#best-grid{grid-template-columns:repeat(3,1fr)}
+@media(max-width:700px){#best-grid{grid-template-columns:repeat(2,1fr)}}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.thumb{aspect-ratio:1;background:#efe7d3;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.card:hover .thumb img{transform:scale(1.05)}
+.badge{position:absolute;left:10px;top:10px;background:var(--persim);color:#fff;font-size:11px;font-weight:700;padding:3px 9px;border-radius:99px}
+.info{padding:14px 16px 16px;display:flex;flex-direction:column;gap:3px;flex:1}
+.info small{color:var(--sub);font-size:12px}
+.info h3{font-size:15px;font-weight:700;line-height:1.4}
+.info p{font-size:12.5px;color:var(--sub)}
+.buy{display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:10px}
+.price{font-family:'Noto Serif KR',serif;font-weight:900;font-size:19px}
+.price em{font-style:normal;font-size:13px;font-weight:500}
+.add{border:1px solid var(--forest);color:var(--forest);background:transparent;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700}
+.add:hover{background:var(--forest);color:#fff}
+.story{background:var(--forest-d);color:#f4efe0}
+.story .two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.story img{border-radius:20px;width:100%;aspect-ratio:4/3;object-fit:cover}
+.story h2{font-family:'Noto Serif KR',serif;font-size:clamp(26px,3.4vw,38px);line-height:1.35;font-weight:900;margin:8px 0 18px}
+.story p{opacity:.88;margin-bottom:12px}
+.story .eyebrow{display:block}
+.facts{display:flex;gap:28px;margin-top:22px;flex-wrap:wrap}
+.facts div b{display:block;font-family:'Noto Serif KR',serif;font-size:30px;color:#f0bb55;line-height:1.1}
+.facts div span{font-size:13px;opacity:.8}
+@media(max-width:820px){.story .two{grid-template-columns:1fr;gap:28px}}
+.certs{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.cert{background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:20px 14px;text-align:center;font-size:14px;font-weight:500}
+.cert i{display:block;font-style:normal;font-size:24px;margin-bottom:6px}
+@media(max-width:760px){.certs{grid-template-columns:1fr 1fr}}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.gallery img{border-radius:14px;aspect-ratio:4/3;object-fit:cover;width:100%}
+@media(max-width:700px){.gallery{grid-template-columns:1fr 1fr}}
+.qr{background:var(--paper);border:1px dashed var(--honey);border-radius:16px;padding:22px 26px;display:flex;gap:16px;align-items:center;margin-top:26px}
+.qr b{font-family:'Noto Serif KR',serif}
+footer{background:#14160e;color:#b9b5a0;padding:48px 0 56px;font-size:13.5px}
+footer .logo{color:#f4efe0;margin-bottom:14px}
+footer dl{display:grid;grid-template-columns:auto 1fr;gap:6px 18px;max-width:560px}
+footer dt{color:#8a8671}footer dd{margin:0}
+footer .note{margin-top:22px;color:#7d7a67;font-size:12.5px}
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;background:var(--forest);color:#fff;border-radius:999px;padding:13px 20px;font-weight:700;font-size:14px;box-shadow:0 6px 20px rgba(0,0,0,.25)}
+.toast{position:fixed;left:50%;bottom:76px;transform:translate(-50%,20px);background:#222;color:#fff;padding:10px 18px;border-radius:10px;font-size:14px;opacity:0;pointer-events:none;transition:.3s;z-index:40}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+</style>
+</head>
+<body>
+<div class="demo"><b>DEMO</b> · 쇼핑몰 구성 시안입니다. 가격·구성은 팜플렛 기준이며 결제·배송 기능은 아직 연결되지 않았습니다.</div>
+<header><div class="wrap bar">
+  <a class="logo" href="#top"><i></i>지리산 자연담은</a>
+  <nav><a href="#best">인기상품</a><a href="#shop">전체상품</a><a href="#gift">선물세트</a><a href="#story">농장이야기</a><a href="#cert">인증</a><a href="#contact">문의</a></nav>
+  <button class="cartbtn" id="cartbtn">장바구니<span id="cnt">0</span></button>
+</div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+  <div class="eyebrow">JIRISAN · SANCHEONG · 해발 730m</div>
+  <h1>지리산 천왕봉 자락에서<br>3대째 이어온 맛</h1>
+  <p>45년 넘는 벌꿀 생산 노하우로, 양보다 품질을 먼저 생각하며 만듭니다. 산청 시골농장의 벌꿀과 곶감을 집으로 보내드려요.</p>
+  <div class="cta"><a class="btn pri" href="#shop">상품 보러가기</a><a class="btn ghost" href="#story">농장 이야기</a></div>
+</div></div>
+
+<div class="trust"><div class="wrap"><ul>
+  <li><b>축산물품질평가원 등급제</b>벌꿀 등급 인증</li>
+  <li><b>HACCP 인증 시설</b>위생 관리 시설</li>
+  <li><b>경남도지사 추천상품</b>지정서 보유</li>
+  <li><b>ISO 22000 · FSSC 22000</b>식품안전경영시스템</li>
+</ul></div></div>
+
+<section><div class="wrap">
+  <div class="sh"><small>CATEGORY</small><h2>무엇을 찾으세요?</h2></div>
+  <div class="cats">
+    <button class="cat" data-go="벌꿀"><img src="img/shop/honey2.jpg" alt=""><div><b>벌꿀</b><span>아카시아 · 야생화 · 밤나무꽃</span></div></button>
+    <button class="cat" data-go="스틱"><img src="img/shop/stick.jpg" alt=""><div><b>스틱 벌꿀</b><span>간편하게 한 포씩</span></div></button>
+    <button class="cat" data-go="선물세트"><img src="img/shop/dojagi.jpg" alt=""><div><b>선물세트</b><span>명절·감사 인사에</span></div></button>
+    <button class="cat" data-go="곶감"><img src="img/shop/gotgam.jpg" alt=""><div><b>고종시 곶감</b><span>산청 곶감 선물</span></div></button>
+  </div>
+</div></section>
+
+<section id="best" style="padding-top:8px"><div class="wrap">
+  <div class="sh"><small>BEST</small><h2>산엔청몰 인기상품</h2><p>산청군 공식 쇼핑몰 「산엔청」에서 판매 중인 대표 6종입니다. 구매 수는 산엔청몰 기준입니다.</p></div>
+  <div class="grid" id="best-grid"></div>
+</div></section>
+
+<section id="shop" style="padding-top:8px"><div class="wrap">
+  <div class="sh"><small>SHOP</small><h2>산청 시골농장 상품</h2><p>지리산반달가슴곰꿀 · 고종시 곶감</p></div>
+  <div class="tabs" id="tabs"></div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section class="story" id="story"><div class="wrap two">
+  <img src="img/couple.jpg" alt="양봉 방충모를 쓴 농장 부부">
+  <div>
+    <span class="eyebrow">OUR STORY</span>
+    <h2>자연과 사람이 함께<br>숨 쉬는 먹거리</h2>
+    <p>지리산 천왕봉(1,915m) 자락, 해발 730m 고지의 맑고 청정한 자연 속에서 3대째 이어온 전통과 45년이 넘는 벌꿀 생산 노하우로 건강한 먹거리를 만들고 있습니다.</p>
+    <p>타협하지 않는 기준으로 최상의 상품만 고집합니다. 앞으로도 자연이 주는 정직한 맛과 건강을 고객 한 분 한 분께 진심을 담아 전해드리겠습니다.</p>
+    <div class="facts"><div><b>3대째</b><span>이어온 전통</span></div><div><b>45년+</b><span>벌꿀 생산 노하우</span></div><div><b>730m</b><span>지리산 고지</span></div></div>
+  </div>
+</div></section>
+
+<section id="cert"><div class="wrap">
+  <div class="sh"><small>CERTIFICATION</small><h2>믿고 드실 수 있는 이유</h2><p>팜플렛에 수록된 인증·지정 내역입니다.</p></div>
+  <div class="certs">
+    <div class="cert"><i>🍯</i>축산물 품질평가원 등급제 인증</div>
+    <div class="cert"><i>🏭</i>HACCP 인증 시설</div>
+    <div class="cert"><i>🏅</i>경상남도지사 추천상품 지정서</div>
+    <div class="cert"><i>📋</i>식품안전경영시스템 ISO 22000</div>
+    <div class="cert"><i>📋</i>식품안전경영시스템 FSSC 22000</div>
+    <div class="cert"><i>🚢</i>경남 농식품가공 수출전문업체 지정</div>
+    <div class="cert"><i>🌾</i>농촌융복합산업 사업자(6차 산업) 인증</div>
+    <div class="cert"><i>✅</i>전국 최초 벌꿀 생산이력제 획득</div>
+  </div>
+  <div class="qr"><div style="font-size:30px">🔎</div><div><b>병뚜껑 QR코드로 확인하세요</b><br><span style="color:var(--sub);font-size:14px">제품 뚜껑의 등급 라벨 QR코드를 조회하면 품질과 정보를 확인할 수 있습니다.</span></div></div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="sh"><small>FARM</small><h2>오늘도 자연을 담습니다</h2></div>
+  <div class="gallery">
+    <img src="img/farm1.jpg" alt="농장 작업장" loading="lazy"><img src="img/farm2.jpg" alt="벌꿀 채밀 작업" loading="lazy"><img src="img/farm3.jpg" alt="감 과수원" loading="lazy">
+    <img src="img/farm4.jpg" alt="등급 라벨 벌꿀" loading="lazy"><img src="img/farm5.jpg" alt="곶감 선물세트" loading="lazy"><img src="img/g3.jpg" alt="유리병 선물세트" loading="lazy">
+  </div>
+</div></section>
+</main>
+
+<footer id="contact"><div class="wrap">
+  <div class="logo"><i></i>지리산 자연담은</div>
+  <dl>
+    <dt>대표</dt><dd>신미지</dd>
+    <dt>연락처</dt><dd><a href="tel:01072042331">010-7204-2331</a></dd>
+    <dt>주소</dt><dd>경상남도 산청군 시천면 지리산대로 838-1</dd>
+    <dt>사업자등록번호</dt><dd>(입력 예정)</dd>
+    <dt>통신판매업 신고</dt><dd>(입력 예정)</dd>
+  </dl>
+  <p class="note">본 페이지는 데모 시안입니다. 상품 이미지는 팜플렛 촬영본에서 잘라 쓴 임시 이미지이며, 실제 오픈 시 상품 촬영본으로 교체합니다.</p>
+</div></footer>
+
+<a class="fab" href="tel:01072042331">📞 전화 주문 010-7204-2331</a>
+<div class="toast" id="toast"></div>
+
+<script>
+const P=[
+["벌꿀","지리산반달가슴곰꿀 아카시아꿀 2.4kg","유리병",90000,"shop/honey24"],
+["벌꿀","지리산반달가슴곰꿀 야생화꽃꿀 2.4kg","유리병",90000,"shop/honey24"],
+["벌꿀","지리산반달가슴곰꿀 밤나무꽃꿀 2.4kg","유리병",100000,"shop/honey24"],
+["벌꿀","지리산반달가슴곰꿀 아카시아꿀 1kg","튜브형",40000,"shop/tube_ac"],
+["벌꿀","지리산반달가슴곰꿀 야생화꽃꿀 1kg","튜브형",40000,"shop/tube_wf"],
+["벌꿀","지리산반달가슴곰꿀 밤나무꽃꿀 1kg","튜브형",45000,"shop/tube_ch"],
+["벌꿀","지리산반달가슴곰꿀 아카시아꿀 500g","튜브형",20000,"shop/tube_ac"],
+["벌꿀","지리산반달가슴곰꿀 야생화꽃꿀 500g","튜브형",20000,"shop/tube_wf"],
+["벌꿀","지리산반달가슴곰꿀 밤나무꽃꿀 500g","튜브형",23000,"shop/tube_ch"],
+["스틱","아카시아꿀 스틱 13g×20개입","스틱형",20000,"shop/stick_a"],
+["스틱","야생화꽃꿀 스틱 13g×20개입","스틱형",20000,"shop/stick_b"],
+["스틱","밤나무꽃꿀 스틱 13g×20개입","스틱형",20000,"shop/stick_one"],
+["선물세트","스틱 벌꿀 세트 45개입","아카시아·야생화·밤나무 각 15개입",45000,"shop/set45"],
+["선물세트","스틱 벌꿀 세트 60개입","아카시아·야생화·밤나무 각 20개입",60000,"shop/set60","선물 추천"],
+["선물세트","2종 세트 (튜브형)","아카시아꿀 500g + 야생화꽃꿀 500g",40000,"shop/tube2"],
+["선물세트","3종 세트 (튜브형)","아카시아·야생화·밤나무꽃꿀 각 500g",60000,"shop/tube3","선물 추천"],
+["선물세트","2종 세트 (튜브형) 1kg","아카시아꿀 1kg + 야생화꽃꿀 1kg",80000,"shop/tube2"],
+["선물세트","도자기꿀 2kg","청색 아카시아꽃꿀 / 황색 야생화꽃꿀",70000,"shop/dojagi"],
+["선물세트","3종 세트 (유리형)","아카시아·야생화·밤나무꽃꿀 각 500g",80000,"g3"],
+["선물세트","2종 세트 (유리형)","아카시아꿀 500g + 야생화꽃꿀 500g",60000,"shop/glass2"],
+["선물세트","3종 세트 (유리형) 때죽나무","아카시아·야생화·때죽나무꿀 각 500g",80000,"g3b"],
+["곶감","고종시 곶감 1kg","28과",40000,"shop/gotgam_a"],
+["곶감","고종시 곶감 1.5kg","36과",56000,"shop/gotgam_b"],
+["곶감","고종시 곶감 2kg","40과",68000,"shop/gotgam_a"],
+["곶감","고종시 곶감 3kg","50과",100000,"shop/gotgam_b","명절 선물"]
+];
+const B=[
+["고종시 곶감 1kg·1.5kg·2kg·3.5kg","곶감·감말랭이",35000,45000,"gotgam",1819,25,"506"],
+["지리산 반달가슴곰꿀","꿀",22000,0,"honey2",543,28,"394"],
+["스틱벌꿀 단품/선물세트","꿀",20000,0,"stick",154,32,"106422"],
+["지리산반달가슴곰 도자기꿀 2kg","꿀",80000,90000,"dojagi",86,4,"391"],
+["감말랭이 500g 2입, 1kg","곶감·감말랭이",23000,0,"gammal",98,20,"580"],
+["국내산 지리산 꿀벌화분 500g, 1kg","꿀",30000,0,"pollen",19,0,"668"]];
+function renderBest(){
+  $("#best-grid").innerHTML=B.map(b=>`<article class="card"><div class="thumb"><span class="badge">${b[3]?Math.round((1-b[2]/b[3])*100)+"% 할인":"인기"}</span><img src="img/shop/${b[4]}.jpg" alt="${b[0]}" loading="lazy"></div>
+  <div class="info"><small>${b[1]}</small><h3>${b[0]}</h3><p>구매 ${won(b[5])}${b[6]?` · 후기 ${b[6]}`:""}</p>
+  <div class="buy"><span class="price">${won(b[2])}<em>원</em>${b[3]?` <s style="font-size:12px;color:var(--sub);font-weight:400">${won(b[3])}</s>`:""}</span><button class="add">담기</button></div></div></article>`).join("")}
+const cats=["전체","벌꿀","스틱","선물세트","곶감"];
+const $=s=>document.querySelector(s);let cur="전체",n=0;
+const won=v=>v.toLocaleString("ko-KR");
+function render(){
+  $("#tabs").innerHTML=cats.map(c=>`<button class="tab" aria-pressed="${c===cur}" data-c="${c}">${c==="스틱"?"스틱 벌꿀":c}</button>`).join("");
+  $("#grid").innerHTML=P.filter(p=>cur==="전체"||p[0]===cur).map(p=>`
+  <article class="card"><div class="thumb">${p[5]?`<span class="badge">${p[5]}</span>`:""}<img src="img/${p[4]}.jpg" alt="${p[1]}" loading="lazy"></div>
+  <div class="info"><small>${p[0]==="스틱"?"스틱 벌꿀":p[0]}</small><h3>${p[1]}</h3><p>${p[2]}</p>
+  <div class="buy"><span class="price">${won(p[3])}<em>원</em></span><button class="add" data-n="${p[1]}">담기</button></div></div></article>`).join("");
+}
+document.addEventListener("click",e=>{
+  const t=e.target.closest("[data-c]");if(t){cur=t.dataset.c;render();return}
+  const g=e.target.closest("[data-go]");if(g){cur=g.dataset.go;render();$("#shop").scrollIntoView();return}
+  const a=e.target.closest(".add");if(a){$("#cnt").textContent=++n;toast("장바구니에 담았어요 (데모)")}
+  if(e.target.closest("#cartbtn"))toast("데모 화면입니다. 결제는 아직 연결되지 않았어요.");
+});
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(t._h);t._h=setTimeout(()=>t.classList.remove("on"),1800)}
+render();renderBest();
+</script>
+</body>
+</html>
